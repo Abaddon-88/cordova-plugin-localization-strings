@@ -10,9 +10,9 @@ module.exports = function(context) {
         promises.push(ios_script(context));
     }
 
-    if (platforms.indexOf('android') >= 0) {
-        promises.push(android_script(context));
-    }
+    // if (platforms.indexOf('android') >= 0) {
+    //     promises.push(android_script(context));
+    // }
 
     return Promise.all(promises);
 };
